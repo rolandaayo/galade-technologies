@@ -10,12 +10,12 @@ export default function Home() {
     <main>
       <nav className="nav shell">
         <Link className="brand" href="/" aria-label="Galade Technologies home"><span className="brand-mark">G</span><span>GALADE<br /><small>TECHNOLOGIES</small></span></Link>
-        <div className="nav-links"><a href="#shop">Installation</a><a href="#solutions">Our process</a><a href="/solar-calculator">Solar calculator</a><a href="/about">About</a><a href="/contact">Contact</a></div>
+        <div className="nav-links"><a href="/products">Products</a><a href="#solutions">Our process</a><a href="/solar-calculator">Solar calculator</a><a href="/about">About</a><a href="/contact">Contact</a></div>
         <a className="nav-cta" href="/contact">Request an estimate <span aria-hidden="true">↗</span></a>
         <button className={`menu-toggle ${menuOpen ? "is-open" : ""}`} type="button" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button>
       </nav>
       <div className={`mobile-menu ${menuOpen ? "is-open" : ""}`} aria-hidden={!menuOpen}>
-        <div className="mobile-menu-links"><a href="#shop" onClick={() => setMenuOpen(false)}>Installation <span>↘</span></a><a href="#solutions" onClick={() => setMenuOpen(false)}>Our process <span>↘</span></a><a href="/solar-calculator">Solar calculator <span>↗</span></a><a href="/about">About <span>↗</span></a><a href="/contact">Contact <span>↗</span></a></div>
+        <div className="mobile-menu-links"><a href="/products" onClick={() => setMenuOpen(false)}>Products <span>↗</span></a><a href="#solutions" onClick={() => setMenuOpen(false)}>Our process <span>↘</span></a><a href="/solar-calculator">Solar calculator <span>↗</span></a><a href="/about">About <span>↗</span></a><a href="/contact">Contact <span>↗</span></a></div>
         <p>Professional solar installation, beautifully simple.</p>
       </div>
 

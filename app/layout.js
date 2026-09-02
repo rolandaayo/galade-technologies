@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Galade Technologies | Energy for what's next",
-  description: "Professional solar installation designed for real life.",
+  description: "Professional solar installation services.",
 };
 
 export default function RootLayout({ children }) {

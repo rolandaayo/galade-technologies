@@ -24,7 +24,28 @@ export default function Home() {
         <div className="hero-image"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=1400&q=85" alt="Solar panels on a modern home at sunset" /><div className="image-note"><span className="live-dot" /> Powering possibility since 2012</div></div>
       </section>
 
-      <section className="ticker"><div className="ticker-inner"><span>Solar installation, made human</span><i>✳</i><span>Smarter energy, everyday</span><i>✳</i><span>Built for your future</span><i>✳</i><span>Solar installation, made human</span></div></section>
+      <section className="ticker" aria-label="Marquee text">
+        <div className="ticker-track">
+          <div className="ticker-group">
+            <span>Solar installation, made human</span>
+            <i>✳</i>
+            <span>Smarter energy, everyday</span>
+            <i>✳</i>
+            <span>Built for your future</span>
+            <i>✳</i>
+            <span>Solar installation, made human</span>
+          </div>
+          <div className="ticker-group" aria-hidden="true">
+            <span>Solar installation, made human</span>
+            <i>✳</i>
+            <span>Smarter energy, everyday</span>
+            <i>✳</i>
+            <span>Built for your future</span>
+            <i>✳</i>
+            <span>Solar installation, made human</span>
+          </div>
+        </div>
+      </section>
 
       <section className="intro shell"><div><p className="eyebrow">Why Galade</p><h2>Good energy<br /><em>starts here.</em></h2></div><div className="intro-detail"><p>We believe solar installation should feel less like a construction project and more like a smart decision. Our team makes the whole journey clear, considered, and completely yours.</p><a className="circle-arrow" href="/about" aria-label="Learn about Galade">↗</a></div></section>
 

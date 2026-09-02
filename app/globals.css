@@ -269,18 +269,38 @@ em {
   padding: 14px 0;
   font: 12px 'DM Mono', monospace;
   text-transform: uppercase;
+  border-top: 1px solid rgba(20, 33, 29, .14);
+  border-bottom: 1px solid rgba(20, 33, 29, .14);
 }
 
-.ticker-inner {
+.ticker-track {
   display: flex;
-  justify-content: space-around;
+  width: max-content;
+  white-space: nowrap;
+  animation: ticker-scroll 18s linear infinite;
+}
+
+.ticker-group {
+  display: flex;
   align-items: center;
-  min-width: 850px;
+  flex-shrink: 0;
+  gap: 28px;
+  padding-right: 28px;
 }
 
 .ticker i {
   font-style: normal;
   font-size: 18px;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .intro {
